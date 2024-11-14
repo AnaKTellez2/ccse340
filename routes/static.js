@@ -1,5 +1,5 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express'); //Express package is brought into the scope
+const router = express.Router(); // Express"router" functionality is invoked and stored. 
 
 // Static Routes
 // Set up "public" folder / subfolders for static files
