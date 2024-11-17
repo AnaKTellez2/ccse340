@@ -4,3 +4,138 @@
 *:after {
   box-sizing: border-box;
 }
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav-bar a:hover {
+  text-decoration: underline;
+}
+
+.account {
+  font-size: 0.9rem;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.car-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.car-image {
+  max-width: 300px;
+}
+
+.car-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.car-details ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Extras Section */
+.extras {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.upgrades, .reviews {
+  flex: 1;
+}
+
+.upgrade-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.upgrade-item {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.upgrade-item img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.reviews ul {
+  list-style: none;
+}
+
+.reviews li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: #fff;
+  margin-top: 20px;
+}
