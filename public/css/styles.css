@@ -1,24 +1,33 @@
 /******* Change Box Model ***************/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
 /* General Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+#wrapper {
+  background-color: #fbfdff;
+  
+}
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background-image: url(../images/site/small_check.jpg);
   color: #333;
+  padding: 70px;
 }
 
 /* Header */
+.siteName{
+  font-size: 25px;
+}
+#top-header{
+  display: flex;
+}
+
+#tools{
+  justify-content: right;
+}
 .header {
   background-color: #222;
   color: #fff;
@@ -106,16 +115,23 @@ main {
 
 .upgrade-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row: auto;
+  gap: 2px;
+}
+
+.upgrades a{
+  display: grid;
+  align-items: center;
+  padding-left: 3px;
 }
 
 .upgrade-item {
-  background-color: #fff;
+  background-color: #21c4b7;
   padding: 10px;
   text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  border: 1px solid #000000;
+  border-radius: 1px;
 }
 
 .upgrade-item img {
@@ -124,11 +140,16 @@ main {
 }
 
 .reviews ul {
-  list-style: none;
+  list-style:circle;
+  padding-left:.25in;
 }
 
 .reviews li {
   margin-bottom: 10px;
+}
+
+.subtitle {
+  padding-bottom: 2ch;
 }
 
 /* Footer */
